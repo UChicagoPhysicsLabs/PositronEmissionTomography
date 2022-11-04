@@ -1,0 +1,21 @@
+{"Program":
+[{"Name":"ResetLateral"},
+ {"Name":"ResetRotation"},
+ {"Name":"Threshold", "Channel":1, "Kind":"lower","Value":8550},
+ {"Name":"Threshold", "Channel":1, "Kind":"upper","Value":8600},
+ {"Name":"Threshold", "Channel":2, "Kind":"lower","Value":8440},
+ {"Name":"Threshold", "Channel":2, "Kind":"upper","Value":8500},
+ {"Name":"Offset", "Channel":1,"Value":0},
+ {"Name":"Offset", "Channel":2,"Value":0},
+ {"Name":"Move","Dir":2, "Dist":0},
+    {"Name":"LOOP",
+        "Times":90,
+        "List":
+            [{"Name":"Move",
+            "Dir":2,
+            "Dist":1000},
+            {"Name":"Scan",
+            "Time":10}]
+        }      
+]
+}
