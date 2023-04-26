@@ -1,0 +1,15 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto f76465020a954310bc0c0ebf2ad14068 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot coincidence_behavior_behav xil_defaultlib.coincidence_behavior xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'gpio_io_t' is not connected on this instance [C:/redpitaya_guide-master/projects/pet_scan/pet_controller/pet_controller.srcs/sim_1/new/coincidence_behavior.v:44]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Coincidence
+Compiling module xil_defaultlib.coincidence_behavior
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot coincidence_behavior_behav

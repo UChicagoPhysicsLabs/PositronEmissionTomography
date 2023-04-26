@@ -1,0 +1,1 @@
+Download both files to the same directory, open Vivado, and run 'source build.tcl' in the console to built.  

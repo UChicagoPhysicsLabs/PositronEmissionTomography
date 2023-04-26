@@ -1,0 +1,7 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/redpitaya_guide-master/projects/pet_scan/pet_controller/pet_controller.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,axi_vip_v1_1_7;processing_system7_vip_v1_0_9;xilinx_vip,,,,,,
+C:/redpitaya_guide-master/projects/pet_scan/pet_controller/pet_controller.srcs/sim_1/new/coincidence_behavior.v,1657048508,verilog,,,,coincidence_behavior,,axi_vip_v1_1_7;processing_system7_vip_v1_0_9;xilinx_vip,../../../../pet_controller.srcs/sources_1/bd/system/ipshared/6b56/hdl;../../../../pet_controller.srcs/sources_1/bd/system/ipshared/8b3d;../../../../pet_controller.srcs/sources_1/bd/system/ipshared/ec67/hdl;C:/Xilinx/Vivado/2020.1/data/xilinx_vip/include,,,,,
+C:/redpitaya_guide-master/projects/pet_scan/pet_controller/pet_controller.srcs/sources_1/new/Coincidence.v,1657047929,verilog,,C:/redpitaya_guide-master/projects/pet_scan/pet_controller/pet_controller.srcs/sim_1/new/coincidence_behavior.v,,Coincidence,,axi_vip_v1_1_7;processing_system7_vip_v1_0_9;xilinx_vip,../../../../pet_controller.srcs/sources_1/bd/system/ipshared/6b56/hdl;../../../../pet_controller.srcs/sources_1/bd/system/ipshared/8b3d;../../../../pet_controller.srcs/sources_1/bd/system/ipshared/ec67/hdl;C:/Xilinx/Vivado/2020.1/data/xilinx_vip/include,,,,,
