@@ -1,1 +1,2 @@
-Download both files to the same directory, open Vivado, and run 'source build.tcl' in the console to built.  
+Download all files to the same directory, open Vivado, navigate to the correct directory in the console, and run 'source build.tcl' to build.  
+Alternatively, a current version of the bitstream is available for download.
