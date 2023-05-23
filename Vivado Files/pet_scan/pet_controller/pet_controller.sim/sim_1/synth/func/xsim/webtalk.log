@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Jun 15 13:48:46 2022
+# Process ID: 12120
+# Current directory: C:/redpitaya_guide-master/projects/pet_scan/pet_controller/pet_controller.sim/sim_1/synth/func/xsim
+# Command line: wbtcv.exe -mode batch -source C:/redpitaya_guide-master/projects/pet_scan/pet_controller/pet_controller.sim/sim_1/synth/func/xsim/xsim.dir/system_wrapper_func_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/redpitaya_guide-master/projects/pet_scan/pet_controller/pet_controller.sim/sim_1/synth/func/xsim/webtalk.log
+# Journal file: C:/redpitaya_guide-master/projects/pet_scan/pet_controller/pet_controller.sim/sim_1/synth/func/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/redpitaya_guide-master/projects/pet_scan/pet_controller/pet_controller.sim/sim_1/synth/func/xsim/xsim.dir/system_wrapper_func_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 15 13:48:46 2022...

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="threshold_sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="threshold_sim" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="501339fs"></ZoomEndTime>
+      <Cursor1Time time="200000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="88"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/threshold_sim/l_threshold" type="array">
+      <obj_property name="ElementShortName">l_threshold[31:0]</obj_property>
+      <obj_property name="ObjectShortName">l_threshold[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/threshold_sim/l_threshold_met" type="logic">
+      <obj_property name="ElementShortName">l_threshold_met</obj_property>
+      <obj_property name="ObjectShortName">l_threshold_met</obj_property>
+   </wvobject>
+   <wvobject fp_name="/threshold_sim/S_AXIS_tdata" type="array">
+      <obj_property name="ElementShortName">S_AXIS_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_tdata[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/threshold_sim/uut/current_data" type="array">
+      <obj_property name="ElementShortName">current_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">current_data[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/threshold_sim/u_threshold_met" type="logic">
+      <obj_property name="ElementShortName">u_threshold_met</obj_property>
+      <obj_property name="ObjectShortName">u_threshold_met</obj_property>
+   </wvobject>
+   <wvobject fp_name="/threshold_sim/u_threshold" type="array">
+      <obj_property name="ElementShortName">u_threshold[31:0]</obj_property>
+      <obj_property name="ObjectShortName">u_threshold[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/threshold_sim/uut/state" type="array">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/threshold_sim/invert" type="logic">
+      <obj_property name="ElementShortName">invert</obj_property>
+      <obj_property name="ObjectShortName">invert</obj_property>
+   </wvobject>
+   <wvobject fp_name="/threshold_sim/uut/ch1_sign" type="logic">
+      <obj_property name="ElementShortName">ch1_sign</obj_property>
+      <obj_property name="ObjectShortName">ch1_sign</obj_property>
+   </wvobject>
+   <wvobject fp_name="/threshold_sim/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+</wave_config>

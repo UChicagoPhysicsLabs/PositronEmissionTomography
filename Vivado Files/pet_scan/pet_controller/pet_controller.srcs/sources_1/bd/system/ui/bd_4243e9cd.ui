@@ -1,0 +1,36 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-285,-128",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port S_AXI -pg 1 -lvl 0 -x -50 -y -30 -defaultsOSRD
+preplace port S_AXI1 -pg 1 -lvl 0 -x -50 -y 50 -defaultsOSRD
+preplace port clk -pg 1 -lvl 0 -x -50 -y 150 -defaultsOSRD
+preplace port s_axi_aresetn -pg 1 -lvl 0 -x -50 -y 10 -defaultsOSRD
+preplace port rot_zero_in -pg 1 -lvl 0 -x -50 -y 230 -defaultsOSRD
+preplace port rot_dir_out -pg 1 -lvl 3 -x 710 -y 170 -defaultsOSRD
+preplace port rot_drive_out -pg 1 -lvl 3 -x 710 -y 150 -defaultsOSRD
+preplace port debounced -pg 1 -lvl 3 -x 710 -y 260 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 2 -x 470 -y -10 -defaultsOSRD
+preplace inst Debouncer_0 -pg 1 -lvl 1 -x 130 -y 230 -defaultsOSRD
+preplace inst rotation_status -pg 1 -lvl 1 -x 130 -y 70 -defaultsOSRD
+preplace inst RotationalControl_0 -pg 1 -lvl 2 -x 470 -y 160 -defaultsOSRD
+preplace netloc Debouncer_0_debounced 1 1 2 280J 270 690
+preplace netloc clk_1 1 0 2 -10 -50 280J
+preplace netloc s_axi_aresetn_1 1 0 2 -20J -60 300J
+preplace netloc rot_zero_in_1 1 0 1 -20 230n
+preplace netloc RotationalControl_0_motor_dir 1 2 1 680J 150n
+preplace netloc RotationalControl_0_motor_pulses 1 2 1 690J 130n
+preplace netloc axi_gpio_0_gpio2_io_o 1 1 2 300 280 670
+preplace netloc RotationalControl_0_motor_state 1 1 2 270J 70 640
+preplace netloc RotationalControl_0_motor_position 1 1 2 270J 260 650
+preplace netloc Conn1 1 0 2 -30J -40 290J
+preplace netloc axi_gpio_0_GPIO 1 1 2 290 250 660
+preplace netloc Conn2 1 0 1 N 50
+levelinfo -pg 1 -50 130 470 710
+pagesize -pg 1 -db -bbox -sgen -190 -90 850 300
+"
+}
+0

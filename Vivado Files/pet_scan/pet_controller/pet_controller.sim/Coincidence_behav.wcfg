@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="coincidence_behavior_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="coincidence_behavior" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="13660001fs"></ZoomEndTime>
+      <Cursor1Time time="14104000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="22" />
+   <wvobject fp_name="/coincidence_behavior/uut/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coincidence_behavior/uut/ch1l" type="logic">
+      <obj_property name="ElementShortName">ch1l</obj_property>
+      <obj_property name="ObjectShortName">ch1l</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coincidence_behavior/uut/ch1h" type="logic">
+      <obj_property name="ElementShortName">ch1h</obj_property>
+      <obj_property name="ObjectShortName">ch1h</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coincidence_behavior/uut/ch2l" type="logic">
+      <obj_property name="ElementShortName">ch2l</obj_property>
+      <obj_property name="ObjectShortName">ch2l</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coincidence_behavior/uut/ch2h" type="logic">
+      <obj_property name="ElementShortName">ch2h</obj_property>
+      <obj_property name="ObjectShortName">ch2h</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coincidence_behavior/uut/coinc_sig" type="logic">
+      <obj_property name="ElementShortName">coinc_sig</obj_property>
+      <obj_property name="ObjectShortName">coinc_sig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coincidence_behavior/uut/counts_out" type="array">
+      <obj_property name="ElementShortName">counts_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">counts_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coincidence_behavior/uut/coinc_state" type="array">
+      <obj_property name="ElementShortName">coinc_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">coinc_state[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coincidence_behavior/uut/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coincidence_behavior/uut/running" type="logic">
+      <obj_property name="ElementShortName">running</obj_property>
+      <obj_property name="ObjectShortName">running</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coincidence_behavior/uut/int_counts" type="array">
+      <obj_property name="ElementShortName">int_counts[15:0]</obj_property>
+      <obj_property name="ObjectShortName">int_counts[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coincidence_behavior/uut/ch1_counts" type="array">
+      <obj_property name="ElementShortName">ch1_counts[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ch1_counts[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coincidence_behavior/uut/ch2_counts" type="array">
+      <obj_property name="ElementShortName">ch2_counts[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ch2_counts[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coincidence_behavior/uut/ch1_over_counts" type="array">
+      <obj_property name="ElementShortName">ch1_over_counts[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ch1_over_counts[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coincidence_behavior/uut/ch2_over_counts" type="array">
+      <obj_property name="ElementShortName">ch2_over_counts[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ch2_over_counts[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coincidence_behavior/uut/timeout_counts" type="array">
+      <obj_property name="ElementShortName">timeout_counts[15:0]</obj_property>
+      <obj_property name="ObjectShortName">timeout_counts[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coincidence_behavior/uut/int_timer" type="array">
+      <obj_property name="ElementShortName">int_timer[15:0]</obj_property>
+      <obj_property name="ObjectShortName">int_timer[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coincidence_behavior/uut/state" type="array">
+      <obj_property name="ElementShortName">state[7:0]</obj_property>
+      <obj_property name="ObjectShortName">state[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coincidence_behavior/uut/timeout" type="array">
+      <obj_property name="ElementShortName">timeout[11:0]</obj_property>
+      <obj_property name="ObjectShortName">timeout[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coincidence_behavior/uut/recover_timeout" type="array">
+      <obj_property name="ElementShortName">recover_timeout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">recover_timeout[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coincidence_behavior/uut/overlap" type="array">
+      <obj_property name="ElementShortName">overlap[7:0]</obj_property>
+      <obj_property name="ObjectShortName">overlap[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coincidence_behavior/uut/state_idle" type="array">
+      <obj_property name="ElementShortName">state_idle[31:0]</obj_property>
+      <obj_property name="ObjectShortName">state_idle[31:0]</obj_property>
+   </wvobject>
+</wave_config>
