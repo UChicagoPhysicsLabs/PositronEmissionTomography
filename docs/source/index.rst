@@ -13,8 +13,8 @@ Contents
 .. toctree::
 
    Hardware
-      Circuitry
-      3d printing
+   Circuitry
+   3d printing
    Software
-      FPGA
-      Python
+   FPGA
+   Python
