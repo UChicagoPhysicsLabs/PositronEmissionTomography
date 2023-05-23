@@ -1,13 +1,7 @@
-Welcome to Lumache's documentation!
+Welcome to UCPhycic's Positron Emission Tomography(PET) laboratory documentation!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
-
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+This documentation is meant to cover the process of building and usage of the laboratory hardware and software for our PET scan apparatus.
 
 .. note::
 
@@ -18,5 +12,9 @@ Contents
 
 .. toctree::
 
-   usage
-   api
+   Hardware
+   Circuitry
+   3d printing
+   Software
+   FPGA
+   Python
