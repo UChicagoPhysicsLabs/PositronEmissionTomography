@@ -1,0 +1,67 @@
+FPGA
+=====
+
+The Vivado project for this experiment can be found at the following link: [[https://github.com/UChicagoPhysicsLabs/PositronEmissionTomography/tree/main/Vivado%20Files]]
+
+If you do not wish to alter the default parameters, then you can just download the system_wrapper.bit file and upload it to your Red Pitaya's [REPLACE] directory.
+
+Vivado is available at [LINK] for free for educators and students.  The author is not an expert, so you may need to find assistance for the setup, configuration, or use of the software.
+
+A block diagram schematic of the FPGA code is shown below:
+[figure]
+
+To start with there are five critical hardware inputs for this configuration.  Three [list] correspond to inputs [list] associated with sensors.  The other inputs are 14 bit signals from the two built in Analog-to-Digital Converters(ADCs).  
+
+There are also five necessary hardware output sets for the FPGA program.  One controls the Digital-to-Analog Converters(DACs) that can output signals to be viewed on the oscilloscope.  This consists of four one-bit flags for clocking, reset state, output selection, and signal writing as well as a 14-bit output.  The other outputs are used to drive the motors, controling the direction of rotation (lat_dir_out and rot_dir_out) [pins] and outputing pulses to the motor control unit [lat_drive_out and rot_drive_out] [pins].  By default, a signal of 1 indicates clockwise rotation and 0 indicates counter-clockwise [CHECK].  The number of pulses needed for one motor rotation is set by switches on the motor control unit [LINK].  Note that if you alter code related to the motor controls, the drivers need at least 2.5$\mu$s per pulse, which is just over 313 clock cycles.
+
+The ADC signals in the Red Pitaya STEMLAB 125-14 are 14 bits, but the inputs are mapped from 0 (for +1V in) to 16383 (for -1V in).  A typical quiescent signal corresponds to a reading of around 8200.  Note that there will likely be 5+ mV of noise on a signal, and it seems that the two channels may sometimes have differing zero offsets.  This may result in you needing different settings for each input, so do check before you assume.
+
+The first module used here is the ''DirectThresholder''.  This takes in the raw ADC signal and has both lower and upper threshold limits configurable via memory addresses [0x8...].  In addition, there is an input that is there to account for a zero-signal offset, as well as the sign of the offset [0x...].  Finally, there is an inversion setting [0x] that determines if the thresholder is looking for signals above or below the zero point.  An input of 1 indicates negative pulses, where 0 is for positive pulses.
+
+The main loop of the thresholder compares the adc value to the lower and upper threshold values, and sets outputs 'lth' and 'uth' accordingly.  It also has a 'sign' output that indicates if the input data is positve or negative, but that is not used at present.  It passes the inversion status through as well just for convinience.
+
+The four output variables of the two thresholders are bundled together and piped to the register [0x] to be accessed for diagnostic purposes.  
+
+[Pulse storage] is a work in progress
+
+Signals from the two thresholding circuits are passed to the 'Coincidence_Block', as well as a number of control registers.  Coincidence_settings [0x] is used to control the state machine in the Coincidence code block.  
+  - The first bit is a flag to reset the counter
+  - The second bit sets the counter to begin running
+
+Coincidence_runtime [0x] is used to set the amount of time in clock cycles that the detection cycle will last for.
+
+The main loop in 'Coincidence.v'  creates a state machine to do the coincidence counting.  It increments an internal counter each clock cycle, and then its behavior depends on the current state.  It always begins a run in the 'idle' state = 0.
+
+If idle and the channel 1 input exeeds the lower threshold:
+    change to state_1_detected = 1
+    add a count to channel 1
+Likewise for channel 2
+If state 1 or 2 has been detected and the complementary input's lower threshold has been surpassed:
+    Change to state_coinc_detected (3)
+    Add a count to the respective channel
+If state 1 or 2 has been detected and the same channel's high threshold has been surpassed:
+    change to state ch_1_over
+    add 1 to ch1_over_counts
+note: This helps you figure out if you are rejecting a large fraction of signals for being too high a voltage.
+
+If in the coincidence detected state and both inputs are below the lower threshold:
+    add one coincidence count
+    change to recovery state
+If in the coincidence detected state for more than 'timeout' = 2 us:
+    increment timeout counter
+    enter recovery state
+note: This exists because of some odd, long pulses that were generating multiple counts in our setup.  In no reasonable world should we see a timeout for an actual coincidence event.
+
+If state 1 or 2 has been detected but the internal counter exceeds the 'timeout' parameter:
+    change to the state_1/2_timeout 
+note: Currently the timeout is set at compile time as 250 clock cycles = 2 microseconds, but this parameter can be edited at will.
+
+If in the over_threshold state for either channel:
+    change to the recovery state at the next clock cycle
+If in the timeout state for either channel:
+    increment the timeout counter
+    change to the recovery stage
+If in the recovery state:
+    Reset to idle if recover_timeout has passed.
+        Currently also 2 microseconds
+

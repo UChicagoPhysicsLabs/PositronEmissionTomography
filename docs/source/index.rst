@@ -11,7 +11,7 @@ Contents
 --------
 
 .. toctree::
-
+   
    Hardware
    Circuitry
    3d printing
