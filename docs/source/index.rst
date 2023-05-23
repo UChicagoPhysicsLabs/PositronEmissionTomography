@@ -11,10 +11,10 @@ Contents
 --------
 
 .. toctree::
-   
+
    Hardware
-   Circuitry
-   3d printing
+   circuitry
+   3d_printing
    Software
    FPGA
-   Python
+   python
