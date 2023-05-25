@@ -9,7 +9,7 @@ TODO: SCRIPTING LANGUAGE DESCRIPTION
 The scripting language has only a few commands, which are brefly described below:
 
 .. list-table:: Scripting Language
-    :widths: 20 40 20 20
+    :widths: 10 20 10 10
     :header-rows: 1
 
     * - Command Name
@@ -28,6 +28,26 @@ The scripting language has only a few commands, which are brefly described below
       - Sets the upper/lower pulse detection threshold in ADC units.  
       - ``Channel``, ``Kind``, ``Value``
       - 1 for the first channel, 2 for the second. \n ``lower`` for the threshold closer to 0V, ``upper`` for the higher threshold.  \n ``Value`` in 14-bit ADC units.  8192 is approximately 0V.
+    * - Offset
+      - Sets an offset for what ADC value is considered to be 0V.  Currently not impemented fully
+      - ``Channel``, ``Value``
+      - 1 for the first channel, 2 for the second. \n ``Value`` in ADC bits.
+    * - Move
+      - Moves the unit laterally
+      - ``Dir``, ``Dist``
+      - ``Dir`` = 0 to move towards the zero-point, anything else to advance. \n ``Dist`` is in units of motor pulses, the actual distance will depend on the configuration of the motor controller.
+    * - Rotate
+      - Rotates the platform
+      - ``Dir``, ``Dist``
+      - ``Dir``= 0 moves clockwise, anything else is counter-clockwise. \n ``Dist`` is in units of motor pulses, and thus depends on the motor controller configuration.
+    * - Scan
+      - Counts coincidences between the two detectors
+      - ``Time``
+      - The amount of time (in seconds) that coincidences are counted for.  Note that there may be a bug where times longer than 34 seconds (requiring more than 32 bits to represent) may not register correctly.  Make sure you test before using.
+    * - Loop
+      - Executes the listed commands sequentially a number of times.
+      - ``Times``, ``List``
+      - ``Times`` is the number of loops to perform. \n ``List`` is an array of other valid commands.  Note that the entire list must be enclosed in square brackets.
 
 For the instructor, you may need to test and diagnose issues with your apparatus at some point.  To that end, a diagnostic tool Jupyter notebook is provided here []
 
