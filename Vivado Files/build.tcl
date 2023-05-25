@@ -1811,13 +1811,13 @@ proc create_hier_cell_Coincidence_Block { parentCell nameHier } {
  ] $toggle_test
 
   # Create instance: util_ds_buf_1, and set properties
-  set util_ds_buf_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_ds_buf:2.1 util_ds_buf_1 ]
+  set util_ds_buf_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_ds_buf:2.2 util_ds_buf_1 ]
   set_property -dict [ list \
    CONFIG.C_SIZE {2} \
  ] $util_ds_buf_1
 
   # Create instance: util_ds_buf_2, and set properties
-  set util_ds_buf_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_ds_buf:2.1 util_ds_buf_2 ]
+  set util_ds_buf_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_ds_buf:2.2 util_ds_buf_2 ]
   set_property -dict [ list \
    CONFIG.C_BUF_TYPE {OBUFDS} \
    CONFIG.C_SIZE {2} \

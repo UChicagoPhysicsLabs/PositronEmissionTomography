@@ -1,11 +1,11 @@
 FPGA
 =====
 
-The Vivado project for this experiment can be found at the following link: [[https://github.com/UChicagoPhysicsLabs/PositronEmissionTomography/tree/main/Vivado%20Files]]
+The Vivado project for this experiment can be found at the following link: `<https://github.com/UChicagoPhysicsLabs/PositronEmissionTomography/tree/main/Vivado%20Files>`_
 
 If you do not wish to alter the default parameters, then you can just download the system_wrapper.bit file and upload it to your Red Pitaya's [REPLACE] directory.
 
-Vivado is available at [LINK] for free for educators and students.  The author is not an expert, so you may need to find assistance for the setup, configuration, or use of the software.
+Vivado is available at [LINK] for free for educators and students.  The author is not an expert, so you may need to find assistance for the setup, configuration, or use of the software.  Note that the Laboratory Edition will not run the build .tcl file by default, the standard edition is needed.
 
 A block diagram schematic of the FPGA code is shown below:
 [figure]
