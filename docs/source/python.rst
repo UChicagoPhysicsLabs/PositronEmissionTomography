@@ -10,8 +10,8 @@ TODO: SCRIPTING LANGUAGE DESCRIPTION
 The scripting language has only a few commands, which are brefly described below:
 
 .. list-table:: Scripting Language
-    :width: 400 px
-    :widths: 1 2 1 1
+    :width: 700 px
+    :widths: 10 20 10 20
     :header-rows: 1
 
     * - Command Name
@@ -29,7 +29,7 @@ The scripting language has only a few commands, which are brefly described below
     * - Threshold
       - Sets the upper/lower pulse detection threshold in ADC units.  
       - ``Channel``, ``Kind``, ``Value``
-      - 1 for the first channel, 2 for the second. |br| ``lower`` for the threshold closer to 0V, ``upper`` for the higher threshold. |br|``Value`` in 14-bit ADC units.  8192 is approximately 0V.
+      - 1 for the first channel, 2 for the second. |br| ``lower`` for the threshold closer to 0V, ``upper`` for the higher threshold. |br| ``Value`` in 14-bit ADC units.  8192 is approximately 0V.
     * - Offset
       - Sets an offset for what ADC value is considered to be 0V.  Currently not impemented fully
       - ``Channel``, ``Value``
