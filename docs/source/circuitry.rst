@@ -1,9 +1,10 @@
+===================================
 Circuitry
-=======
+===================================
 
 There is only a small bit of external circuitry required to make this setup work, and a schematic can be had here: []
 
-In order to facilitate ease of construction, the gerber files are available here [] or you can order copies directly from OSHPark `here https://oshpark.com/shared_projects/csxi5Mkn>`_.
+In order to facilitate ease of construction, the gerber files are available here [] or you can order copies directly from OSHPark `here <https://oshpark.com/shared_projects/csxi5Mkn>`_.
 
 This add-on board has a few purposes:
   Power and receive signals from sensors

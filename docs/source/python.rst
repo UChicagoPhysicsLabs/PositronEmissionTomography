@@ -1,5 +1,6 @@
+===================================
 Python
-=======
+===================================
 
 Python was chosen as an interfacing language due to our students' prior exposure to it in the form of Jupyter notebooks.  One could easily translate the code into another language, but for this experiment nothing of noteworthy speed needs to be done on the Red Pitaya that isn't accomplished in the FPGA.
 
@@ -20,11 +21,11 @@ The scripting language has only a few commands, which are brefly described below
     * - ResetLateral
       - Moves the platform to the zero position of the linear stage.  Will time out if an excessive amount of time is taken to prevent motor damage if the sensor fails.
       - none
-      - 
+      - none
     * - ResetRotation
       - Rotates the platform until the zero angular position is triggered twice.  Will only work after a lateral reset.  Also times out if operation takes too long.
       - none
-      -
+      - none
     * - Threshold
       - Sets the upper/lower pulse detection threshold in ADC units.  
       - ``Channel``, ``Kind``, ``Value``
