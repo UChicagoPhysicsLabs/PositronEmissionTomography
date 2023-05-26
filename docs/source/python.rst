@@ -9,6 +9,7 @@ TODO: SCRIPTING LANGUAGE DESCRIPTION
 The scripting language has only a few commands, which are brefly described below:
 
 .. list-table:: Scripting Language
+    :width: 800 px
     :widths: 10 20 10 10
     :header-rows: 1
 
@@ -39,7 +40,7 @@ The scripting language has only a few commands, which are brefly described below
     * - Rotate
       - Rotates the platform
       - ``Dir``, ``Dist``
-      - ``Dir``= 0 moves clockwise, anything else is counter-clockwise. \n ``Dist`` is in units of motor pulses, and thus depends on the motor controller configuration.
+      - ``Dir`` = 0 moves clockwise, anything else is counter-clockwise. \n ``Dist`` is in units of motor pulses, and thus depends on the motor controller configuration.
     * - Scan
       - Counts coincidences between the two detectors
       - ``Time``
