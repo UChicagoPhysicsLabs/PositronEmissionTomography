@@ -75,5 +75,4 @@ If in the recovery state:
       - Exit states
     * - Idle
       - 0
-      - 1 if ch1 is over lower threshold
-      - 2 if ch2 is over lower threshold
+      - 1 if ch1 is over lower threshold \n 2 if ch2 is over lower threshold
