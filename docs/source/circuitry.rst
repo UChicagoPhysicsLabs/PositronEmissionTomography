@@ -2,7 +2,12 @@
 Circuitry
 ===================================
 
-There is only a small bit of external circuitry required to make this setup work, and a schematic can be had here: []
+There is only a small bit of external circuitry required to make this setup work, and a schematic can be seen below:
+
+.. image:: images/pet_hat_schematic.png
+   :width: 600
+   :alt: Schematics may also be seen from opening the gerber files with an appropriate program.
+
 
 In order to facilitate ease of construction, the gerber files are available `here <https://github.com/UChicagoPhysicsLabs/PositronEmissionTomography/blob/main/Schematics/PET%20Hat%20Schematic_2022-07-21.zip>`_ or you can order copies directly from OSHPark `here <https://oshpark.com/shared_projects/csxi5Mkn>`_.
 
