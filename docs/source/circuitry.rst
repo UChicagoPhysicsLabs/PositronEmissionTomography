@@ -12,9 +12,9 @@ There is only a small bit of external circuitry required to make this setup work
 In order to facilitate ease of construction, the gerber files are available `here <https://github.com/UChicagoPhysicsLabs/PositronEmissionTomography/blob/main/Schematics/PET%20Hat%20Schematic_2022-07-21.zip>`_ or you can order copies directly from OSHPark `here <https://oshpark.com/shared_projects/csxi5Mkn>`_.
 
 This add-on board has a few purposes:
-* Power and receive signals from sensors
-* Send signals to motor controllers
-  * Convert logic level outputs for motor controllers
+  * Power and receive signals from sensors
+  * Send signals to motor controllers
+    * Convert 3.3V logic levels to 5V outputs for motor controllers
 
 A finished build is shown below:
 
