@@ -16,7 +16,13 @@ This add-on board has a few purposes:
 * Send signals to motor controllers
   * Convert logic level outputs for motor controllers
 
-A finished build is shown here [].  Note that four of the five JST headers have pins removed.  This was intentional, as by removing those pins and filling the corresponding sockets with a solid material (hot glue is good) it is possible to make cables that cannot be connected improperly without heroic effort.  This makes the setup far more robust against assembly failures.
+A finished build is shown below:
+
+.. image:: images/finished_pet_hat.png
+  :width: 800
+  :alt: Photograph of populated circuit board.
+
+Note that four of the five JST headers have pins removed.  This was intentional, as by removing those pins and filling the corresponding sockets with a solid material (hot glue is good) it is possible to make cables that cannot be connected improperly without heroic effort.  This makes the setup far more robust against assembly failures.
 
 
 A board is also available for the HV power supply here:
