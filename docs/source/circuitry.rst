@@ -14,6 +14,7 @@ In order to facilitate ease of construction, the gerber files are available `her
 This add-on board has a few purposes:
   * Power and receive signals from sensors
   * Send signals to motor controllers
+  
     * Convert 3.3V logic levels to 5V outputs for motor controllers
 
 A finished build is shown below:
