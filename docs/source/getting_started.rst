@@ -15,6 +15,7 @@ Getting Started
     * If not in the USA, check your country's wiring color code.  When in doubt, measure the the prongs to terminals to check the connectivity.
 
   #. After plugging in the power supply (the fan should turn on immediately), test the output voltage difference between V+ and V-.
+  
     * If needed, adjust the potentiometer to the left of the terminal blocks such that the output is around 36V.  The stepper drivers should be fine with a wide range of inputs, so this isn't actually strictly needed.
 
   #. Connect the V- and V+ terminals of the power supply to the GND and +Vdc of each stepper driver.
@@ -78,7 +79,7 @@ Red Pitaya Hardware setup
     * The long tab at the back should always face away from the front edge.
     * If in doubt, check the image on the circuitry page.
     * Optional: counting from the left to right, trim off pins 4 & 5 of the ``LAT_MOTOR`` connector, pins 2 & 3 of the ``ROT_MOTOR`` connector, pin 3 of the ``LAT_ZERO`` connector, and pin 2 of the ``LAT_MAX`` connector.
-    
+
   #. Using some stranded wire, construct cables that will connect the Red Pitaya to the rest of the system.  You'll probably want 30-50 cm long stretches for this to have space to work with.
     * If you're able to, I'd suggest braiding the wires for each connector together.  It helps keep things organized, untangled, and low-noise.  Plus it acts as strain relief, making it less likely something will be damaged by someone pulling on a cable too hard.
     * The ``LAT_MOTOR`` should have pins 1,2,3, & 6 of the JST header connected and 4 & 5 empty.  The wires will connect to a screw terminal for the motor controller, corresponding to ``DIR+``, ``DIR-``, ``PUL-``, and ``PUL+`` respectively.
