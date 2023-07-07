@@ -8,10 +8,12 @@ Getting Started
   #. Connect each motor to its own driver unit via the screw terminals.  Black, green, red, and blue wires should connect to A+, A-, B+, and B- terminals, respectively.
   #. Attach terminal lugs to the three wires of the power cord.
   #. Attach the power cord to the motor driver power supply via the terminal lugs.
+
      * Green to Ground
      * White to (N)eutral
      * Black to (L)ive
      * If not in the USA, check your country's wiring color code.  When in doubt, measure the the prongs to terminals to check the connectivity.
+     
   #. After plugging in the power supply (the fan should turn on immediately), test the output voltage difference between V+ and V-.
     * If needed, adjust the potentiometer to the left of the terminal blocks such that the output is around 36V.  The stepper drivers should be fine with a wide range of inputs, so this isn't actually strictly needed.
   #. Connect the V- and V+ terminals of the power supply to the GND and +Vdc of each stepper driver.
