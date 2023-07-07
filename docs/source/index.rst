@@ -20,3 +20,4 @@ Contents
    FPGA
    Software
    Python
+   usage
