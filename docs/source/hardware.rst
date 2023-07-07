@@ -1,6 +1,6 @@
 
 Hardware
-##############
+##################
 
 There are numerous pieces of hardware that interconnect to create the PET scan apparatus.  At a minimum, a pair of scintillation detectors sensitive to 511 keV gammas are needed.  We include schematics for a +1kV power supply that is capable of powering some common NaI(TI) scintillators coupled to PhotoMultiplier Tubes (PMTs).  A screw-driven linear stage is used to move a sample between the paired detectors, with an additional rotation stage on top to allow for collecting of coincidence rate versus linear position and angle data.  A pair of 3d printed stands are provided that will work with 59mm diameter PMTs, but any reasonably stable implementation should be fine.  Several more 3d printed parts are provided which serve to lift the linear stage up slightly, provide support, and hold an optical sensor used for reset detection.
 

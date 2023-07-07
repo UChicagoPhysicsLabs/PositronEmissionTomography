@@ -1,6 +1,6 @@
 
 FPGA
-##############
+##################
 
 The Vivado project for this experiment can be found at the following link: `<https://github.com/UChicagoPhysicsLabs/PositronEmissionTomography/tree/main/Vivado%20Files>`_
 

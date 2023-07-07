@@ -1,5 +1,5 @@
 Software
-##############
+##################
 
 There are several software layers that work together to make this experiment possible.  At the lowest level, there is the FPGA bitstream that configures the logic gates used for processing PhotoMultiplier Tube (PMT) signals.  Currently Viviado is used to design and synthesize the code for the FPGA, with much of the code written in the Verilog HDL.
 

@@ -1,6 +1,6 @@
 
 Getting Started
-##################
+######################
 
   #. Assemble the linear rail according to the manufacturer's instructions
   #. Attach one stepper motor to the lead screw
