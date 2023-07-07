@@ -1,14 +1,14 @@
-===================================
+
 Python
-===================================
+##############
 
 Python was chosen as an interfacing language due to our students' prior exposure to it in the form of Jupyter notebooks.  One could easily translate the code into another language, but for this experiment nothing of noteworthy speed needs to be done on the Red Pitaya that isn't accomplished in the FPGA.
 
 The main notebook intended for student use is the `Command_parser.ipynb <https://github.com/UChicagoPhysicsLabs/PositronEmissionTomography/blob/main/Red%20Pitaya/FPGA%20PET%20Command%20Interpreter.ipynb>`_  file.  This is designed to be used as a tool by students with no modification of code needed.  Instead, students will run the notebook until the 6th code cell where they are prompted to upload a command file.  These files are written in a JSON format that describes relevant parameters to be set and then denotes a series of coincidence detection and motor movements.  Examples are provided which demonstrate the basic behavior, but students are required to modify tiles to collect a sufficient dataset.  The three examples `move the platform to the center and scan for 10s <https://github.com/UChicagoPhysicsLabs/PositronEmissionTomography/blob/main/Red%20Pitaya/single_center_scan.json>`_, `perform a single linear scan <https://github.com/UChicagoPhysicsLabs/PositronEmissionTomography/blob/main/Red%20Pitaya/linearscan.json>`_, and `perform three scans at 0, 545, and 90 degrees <https://github.com/UChicagoPhysicsLabs/PositronEmissionTomography/blob/main/Red%20Pitaya/three.json>`_
 
-_____________________
+
 Scripting Language
-_____________________
+********************************
 The scripting language has only a few commands, which are brefly described below:
 
 .. list-table:: Scripting Language
@@ -54,9 +54,9 @@ The scripting language has only a few commands, which are brefly described below
       - ``Times`` is the number of loops to perform. |br| ``List`` is an array of other valid commands.  Note that the entire list must be enclosed in square brackets.
 
 
-___________________________________
+
 Jupyter Notebooks
-___________________________________
+*****************
 
 For the instructor, you may need to test and diagnose issues with your apparatus at some point.  To that end, a diagnostic tool Jupyter notebook is provided `here <https://github.com/UChicagoPhysicsLabs/PositronEmissionTomography/blob/main/Red%20Pitaya/FPGA_Signal_Observation.ipynb>`_ .
 
