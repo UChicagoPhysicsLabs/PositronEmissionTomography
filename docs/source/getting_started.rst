@@ -13,10 +13,10 @@ Building the foundation
   #. Attach terminal lugs to the three wires of the power cord.
   #. Attach the power cord to the motor driver power supply via the terminal lugs.
 
-    * Green to Ground
-    * White to (N)eutral
-    * Black to (L)ive
-    * If not in the USA, check your country's wiring color code.  When in doubt, measure the the prongs to terminals to check the connectivity.
+     * Green to Ground
+     * White to (N)eutral
+     * Black to (L)ive
+     * If not in the USA, check your country's wiring color code.  When in doubt, measure the the prongs to terminals to check the connectivity.
 
   #. After plugging in the power supply (the fan should turn on immediately), test the output voltage difference between V+ and V-.
 
@@ -25,10 +25,10 @@ Building the foundation
 
   #. Connect the V- and V+ terminals of the power supply to the GND and +Vdc of each stepper driver.
   #. Check the settings of the stepper driver
-    * If you have a newer model, make sure the top voltage selection switch is set to 5V, not 24V.  Otherwise, the Red Pitaya will be unable to produce high enough logic levels to be read by the device
-    * The first four switches of the 8 switch bank should be on-off-off-on for the motors we recommend
-    * If you are using different motors, make sure that the current you select is within their RMS rating.
-    * The last four switches should be set __ for the linear stage and __ for the rotational stage for the default.  If you use other stepping parameters, you'll have to adjust the reconstruction notebook.  Excessively high numbers of pulses/revolution may require altering the FPGA code, as there is a timeout on the reset functions to avoid motor burnout.
+     * If you have a newer model, make sure the top voltage selection switch is set to 5V, not 24V.  Otherwise, the Red Pitaya will be unable to produce high enough logic levels to be read by the device
+     * The first four switches of the 8 switch bank should be on-off-off-on for the motors we recommend
+     * If you are using different motors, make sure that the current you select is within their RMS rating.
+     * The last four switches should be set __ for the linear stage and __ for the rotational stage for the default.  If you use other stepping parameters, you'll have to adjust the reconstruction notebook.  Excessively high numbers of pulses/revolution may require altering the FPGA code, as there is a timeout on the reset functions to avoid motor burnout.
  
 **At this point you can test the motor stages to see if things are functioning as expected.**
 
