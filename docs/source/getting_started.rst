@@ -20,8 +20,10 @@ Getting Started
     - The first four switches of the 8 switch bank should be on-off-off-on for the motors we recommend
     - If you are using different motors, make sure that the current you select is within their RMS rating.
     - The last four switches should be set __ for the linear stage and __ for the rotational stage for the default.  If you use other stepping parameters, you'll have to adjust the reconstruction notebook.  Excessively high numbers of pulses/revolution may require altering the FPGA code, as there is a timeout on the reset functions to avoid motor burnout.
-  
-  At this point you can test the motor stages to see if things are functioning as expected.
+ 
+**At this point you can test the motor stages to see if things are functioning as expected.**
+
+
     #. 0-5V pulses sent to the PUL+ & PUL- terminals should cause the motors to turn.  The documentation recommends at most 200 kHz and a 50% duty cycle for the signal, but it would be wise to start out at a much lower frequency to avoid issues if a motor stalls.
     #. A DC supply can be used to set the direction via the DIR+ & DIR- terminals
     #. If the motor rotates less frequently than expected, or rotates in the wrong direction, check your connections to the A and B terminals.  If you're scavanging parts, make sure you don't have a unipolar stepper motor because it won't work with this setup.
@@ -49,7 +51,7 @@ Finalizing the linear stage
   #. Place the photodetector holders over the aluminum rail at equal spacing from the center of the acrylic disc.
     - Note that the setup will still work if this isn't done precisely, but you'll have a bit worse signal to noise.
 
-At this point, you should have the linear stage complete and be ready to add the Red Pitaya for control & data processing.
+**At this point, you should have the linear stage complete and be ready to add the Red Pitaya for control & data processing.**
 
 ================
 Red Pitaya Hardware setup
