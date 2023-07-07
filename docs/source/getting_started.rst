@@ -20,7 +20,7 @@ Building the foundation
 
   #. After plugging in the power supply (the fan should turn on immediately), test the output voltage difference between V+ and V-.
 
-    * If needed, adjust the potentiometer to the left of the terminal blocks such that the output is around 36V.  The stepper drivers should be fine with a wide range of inputs, so this isn't actually strictly needed.
+     * If needed, adjust the potentiometer to the left of the terminal blocks such that the output is around 36V.  The stepper drivers should be fine with a wide range of inputs, so this isn't actually strictly needed.
 
   #. Connect the V- and V+ terminals of the power supply to the GND and +Vdc of each stepper driver.
   #. Check the settings of the stepper driver
@@ -116,7 +116,7 @@ Red Pitaya software setup
   #. Insert the SD card, power on the Red Pitaya, and connect it to a computer via Ethernet
 
      * It may work best to do a direct, point-to-point connection at first.
-     
+
   #. Connect to your Red Pitaya via the ``rp-xxxxxx.local/`` link, where ``xxxxxx`` stands for the last 6 characters of the MAC address.  See the `documentation <https://redpitaya.readthedocs.io/en/latest/quickStart/connect/connect.html>`_ for more specifics.
   #. Open up Jupyter Notebook (It may be hidden in a subfolder on the second screen if this is a newer image)
   #. Navigate to the ``FPGA_signal_processing`` notebook.
