@@ -1,6 +1,6 @@
-===================================
+############
 Getting Started
-===================================
+############
 
   #. Assemble the linear rail according to the manufacturer's instructions
   #. Attach one stepper motor to the lead screw
@@ -8,10 +8,10 @@ Getting Started
   #. Connect each motor to its own driver unit via the screw terminals.  Black, green, red, and blue wires should connect to A+, A-, B+, and B- terminals, respectively.
   #. Attach terminal lugs to the three wires of the power cord.
   #. Attach the power cord to the motor driver power supply via the terminal lugs.
-    * Green to Ground
-    * White to (N)eutral
-    * Black to (L)ive
-    * If not in the USA, check your country's wiring color code.  When in doubt, measure the the prongs to terminals to check the connectivity.
+     * Green to Ground
+     * White to (N)eutral
+     * Black to (L)ive
+     * If not in the USA, check your country's wiring color code.  When in doubt, measure the the prongs to terminals to check the connectivity.
   #. After plugging in the power supply (the fan should turn on immediately), test the output voltage difference between V+ and V-.
     * If needed, adjust the potentiometer to the left of the terminal blocks such that the output is around 36V.  The stepper drivers should be fine with a wide range of inputs, so this isn't actually strictly needed.
   #. Connect the V- and V+ terminals of the power supply to the GND and +Vdc of each stepper driver.
@@ -28,9 +28,9 @@ Getting Started
     #. A DC supply can be used to set the direction via the DIR+ & DIR- terminals
     #. If the motor rotates less frequently than expected, or rotates in the wrong direction, check your connections to the A and B terminals.  If you're scavanging parts, make sure you don't have a unipolar stepper motor because it won't work with this setup.
 
-======
+*********
 Finalizing the linear stage
-======
+*********
   #. Mark the center of the acrylic disk
   #. Go to the `File Downoads section of the Pololu site <https://www.pololu.com/product-info-merged/1993>`_ and print the .pdf of the mechanical drawing
   #. Using the template, drill out the holes with a #41 (.0960") bit
@@ -53,9 +53,9 @@ Finalizing the linear stage
 
 **At this point, you should have the linear stage complete and be ready to add the Red Pitaya for control & data processing.**
 
-================
+*********
 Red Pitaya Hardware setup
-================
+*********
   #. Fabricate a header PCB as detailed in the :ref:`Circuitry Page`
   #. Place the 40 pin headers on the underside (the side that doesn't have the ``Red Pitaya PET Scan Extension`` text) and solder them to the board.
     * Make sure the alignment tabs match up with the Red Pitaya when you do this.  It's difficuly to gracefully recover if you get this wrong.
@@ -79,18 +79,18 @@ Red Pitaya Hardware setup
     * The SMA high-speed inputs to the Red Pitaya should connect to your photomultiplier tubes via 50 Ohm terminators.
     * The high-speed outputs can be connected to a scope via 50 Ohm termination to facilitate troubleshooting later.
 
-================
+*********
 High Voltage Power Supply
-================
+*********
 WIP
 
-================
+*********
 Red Pitaya software setup
-================
+*********
   #. `Download the preconfigured iso file here <https://github.com/UChicagoPhysicsLabs/PositronEmissionTomography/tree/main/Red%20Pitaya/Backend%20Software>`_
   #. Image the Red Pitaya's sd card with the downloaded iso.  Instructions on how to do so are in the `official documentation <https://redpitaya.readthedocs.io/en/latest/quickStart/SDcard/SDcard.html#download-and-install-the-sd-card-image>`_
   #. Insert the SD card, power on the Red Pitaya, and connect it to a computer via Ethernet
-    - It may work best to do a direct, point-to-point connection at first.
+     * It may work best to do a direct, point-to-point connection at first.
   #. Connect to your Red Pitaya via the ``rp-xxxxxx.local/`` link, where ``xxxxxx`` stands for the last 6 characters of the MAC address.  See the `documentation <https://redpitaya.readthedocs.io/en/latest/quickStart/connect/connect.html>`_ for more specifics.
   #. Open up Jupyter Notebook (It may be hidden in a subfolder on the second screen if this is a newer image)
   #. Navigate to the ``FPGA_signal_processing`` notebook.
