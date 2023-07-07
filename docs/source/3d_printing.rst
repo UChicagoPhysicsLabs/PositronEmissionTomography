@@ -1,7 +1,6 @@
 
-###################
 3d Printing
-###################
+===============
 
 This setup uses multiple 3d printed parts.  They have been tested on a Raise3D Pro3 printer with a .4mm nozzle, so beware that some tolerances may be incorrect for other machines.  
 

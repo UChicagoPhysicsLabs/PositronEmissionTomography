@@ -1,6 +1,6 @@
 
 Python
-##################
+===============
 
 Python was chosen as an interfacing language due to our students' prior exposure to it in the form of Jupyter notebooks.  One could easily translate the code into another language, but for this experiment nothing of noteworthy speed needs to be done on the Red Pitaya that isn't accomplished in the FPGA.
 
@@ -8,7 +8,7 @@ The main notebook intended for student use is the `Command_parser.ipynb <https:/
 
 
 Scripting Language
-********************************
+--------------------
 The scripting language has only a few commands, which are brefly described below:
 
 .. list-table:: Scripting Language
@@ -56,7 +56,7 @@ The scripting language has only a few commands, which are brefly described below
 
 
 Jupyter Notebooks
-*****************
+---------------------
 
 For the instructor, you may need to test and diagnose issues with your apparatus at some point.  To that end, a diagnostic tool Jupyter notebook is provided `here <https://github.com/UChicagoPhysicsLabs/PositronEmissionTomography/blob/main/Red%20Pitaya/FPGA_Signal_Observation.ipynb>`_ .
 

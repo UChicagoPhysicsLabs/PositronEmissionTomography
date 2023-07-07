@@ -1,6 +1,6 @@
 
 Getting Started
-######################
+====================
 
   #. Assemble the linear rail according to the manufacturer's instructions
   #. Attach one stepper motor to the lead screw
@@ -30,7 +30,7 @@ Getting Started
 
 
 Finalizing the linear stage
-***************************
+--------------------------------
   #. Mark the center of the acrylic disk
   #. Go to the `File Downoads section of the Pololu site <https://www.pololu.com/product-info-merged/1993>`_ and print the .pdf of the mechanical drawing
   #. Using the template, drill out the holes with a #41 (.0960") bit
@@ -55,7 +55,7 @@ Finalizing the linear stage
 
 
 Red Pitaya Hardware setup
-***************************
+--------------------------------
   #. Fabricate a header PCB as detailed in the :ref:`Circuitry Page`
   #. Place the 40 pin headers on the underside (the side that doesn't have the ``Red Pitaya PET Scan Extension`` text) and solder them to the board.
     * Make sure the alignment tabs match up with the Red Pitaya when you do this.  It's difficuly to gracefully recover if you get this wrong.
@@ -81,12 +81,12 @@ Red Pitaya Hardware setup
 
 
 High Voltage Power Supply
-***************************
+--------------------------------
 WIP
 
 
 Red Pitaya software setup
-***************************
+--------------------------------
   #. `Download the preconfigured iso file here <https://github.com/UChicagoPhysicsLabs/PositronEmissionTomography/tree/main/Red%20Pitaya/Backend%20Software>`_
   #. Image the Red Pitaya's sd card with the downloaded iso.  Instructions on how to do so are in the `official documentation <https://redpitaya.readthedocs.io/en/latest/quickStart/SDcard/SDcard.html#download-and-install-the-sd-card-image>`_
   #. Insert the SD card, power on the Red Pitaya, and connect it to a computer via Ethernet
