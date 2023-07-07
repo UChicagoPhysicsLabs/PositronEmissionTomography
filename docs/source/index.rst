@@ -13,11 +13,11 @@ Contents
 
 .. toctree::
 
-   Getting_Started
-   3d_Printing
+   getting_gtarted
+   3d_printing
    Hardware
    Circuitry
    FPGA
-   Software
-   Python
+   software
+   python
 

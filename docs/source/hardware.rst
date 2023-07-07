@@ -8,7 +8,7 @@ This setup uses a pair of stepper motors for positioning samples, each of which 
 
 Three sensors are used here, two that help reset the sample to a known position and one which acts as an endstop to shut down the motor if the linear stage is driven too far.  A pair of microswitches [photo] are attached to the aluminum extrusion that houses the linear stage approximately [distance] apart, and the starting lateral position is also coincident with an optical detector used in the rotational zeroing algorithm.  Note that this could be replaced with any device that runs on +- 3.3V and that outputs a 3.3V logic level.
 
-**** Building the device ****
+**Building the device **
 
 The linear stage has assembly instructions included if I remember correctly, but there are also video instructions `online here <https://www.youtube.com/watch?v=OKe5Pa23JrI>`_.
 

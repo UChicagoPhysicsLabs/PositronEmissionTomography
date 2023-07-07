@@ -38,21 +38,26 @@ The main loop in 'Coincidence.v'  creates a state machine to do the coincidence 
 If ``idle`` and the channel 1 input exeeds the lower threshold:
     change to state_1_detected = 1
     add a count to channel 1
+
 Likewise for channel 2
 If the system is in state 1 or 2 and the complementary input's lower threshold has been surpassed:
     Change to ``state_coinc_detected`` (3)
     Add a count to the respective channel
+
 If state 1 or 2 has been detected and the same channel's high threshold has been surpassed:
     change to state ch_1_over
     add 1 to ch1_over_counts
+
 note: This helps you figure out if you are rejecting a large fraction of signals for being too high a voltage.
 
 If in the coincidence detected state and both inputs are below the lower threshold:
     add one coincidence count
     change to recovery state
+
 If in the coincidence detected state for more than 'timeout' = 2 us:
     increment timeout counter
     enter recovery state
+
 note: This exists because of some odd, long pulses that were generating multiple counts in our setup.  In no reasonable world should we see a timeout for an actual coincidence event.
 
 If state 1 or 2 has been detected but the internal counter exceeds the 'timeout' parameter:
@@ -62,9 +67,11 @@ Note: Currently the timeout is set at compile time as 250 clock cycles = 2 micro
 
 If in the over_threshold state for either channel:
     change to the recovery state at the next clock cycle
+
 If in the timeout state for either channel:
     increment the timeout counter
     change to the recovery stage
+    
 If in the recovery state:
     Reset to idle if recover_timeout has passed.
         Currently also 2 microseconds

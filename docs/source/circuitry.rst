@@ -1,9 +1,6 @@
 .. _Circuitry Page:
 
 Circuitry
-**********
-
-Circuitry
 ===============
 
 There is only a small bit of external circuitry required to make this setup work, and a schematic can be seen below:
