@@ -2,6 +2,10 @@
 Getting Started
 ====================
 
+
+Building the foundation
+-------------------------
+
   #. Assemble the linear rail according to the manufacturer's instructions
   #. Attach one stepper motor to the lead screw
   #. Attach the second stepper motor to the `gantry plate <https://makerstore.cc/product/c-beam-gantry-plate/>`_ using the motor bracket
@@ -15,7 +19,8 @@ Getting Started
     * If not in the USA, check your country's wiring color code.  When in doubt, measure the the prongs to terminals to check the connectivity.
 
   #. After plugging in the power supply (the fan should turn on immediately), test the output voltage difference between V+ and V-.
-  
+
+
     * If needed, adjust the potentiometer to the left of the terminal blocks such that the output is around 36V.  The stepper drivers should be fine with a wide range of inputs, so this isn't actually strictly needed.
 
   #. Connect the V- and V+ terminals of the power supply to the GND and +Vdc of each stepper driver.
@@ -39,10 +44,10 @@ Finalizing the linear stage
   #. Go to the `File Downoads section of the Pololu site <https://www.pololu.com/product-info-merged/1993>`_ and print the .pdf of the mechanical drawing
   #. Using the template, drill out the holes with a #41 (.0960") bit
   #. Use a #4-40 tap to thread holes in the plate
+
     - If you have it, use a slightly larger bit to slightly countersink the holes.
 
   #. Attach the plate to the motor on the gantry plate using the provided set screws
-
   #. 3D print the feet, center channel, and photodetector holder
   #. Using 3M (?) screws and toggle nuts, mount the feet and center channel to the bottom of the rail.
     * The feet should be towards the far ends and the center channel in the middle.  The channel in the central part should be perpendicular to the direction of the rail.

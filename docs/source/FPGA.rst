@@ -41,7 +41,7 @@ If ``idle`` and the channel 1 input exeeds the lower threshold:
 
 Likewise for channel 2
 If the system is in state 1 or 2 and the complementary input's lower threshold has been surpassed:
-    Change to ``state_coinc_detected`` (3)
+    Change to ``state_coinc_detected`` = 3
     Add a count to the respective channel
 
 If state 1 or 2 has been detected and the same channel's high threshold has been surpassed:
@@ -71,7 +71,7 @@ If in the over_threshold state for either channel:
 If in the timeout state for either channel:
     increment the timeout counter
     change to the recovery stage
-    
+
 If in the recovery state:
     Reset to idle if recover_timeout has passed.
         Currently also 2 microseconds
