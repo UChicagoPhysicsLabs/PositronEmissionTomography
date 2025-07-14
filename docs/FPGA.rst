@@ -48,8 +48,8 @@ DAC selection
 This module selects from a number of internal signals and forwards them to the two DAC channels.  These are controlled via registers [``0x4002_0000``] and [``0x4002_0008``] for channels 1 and 2, respectively.  The following outputs are currently selectable:
 
 .. list-table:: Output Selections
-  :widths: 25 25
   :header-rows: 1
+  
   * - Register value
     - Output
   * - 0x00
