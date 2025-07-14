@@ -46,26 +46,50 @@ DAC selection
 ===============
 
 This module selects from a number of internal signals and forwards them to the two DAC channels.  These are controlled via registers [``0x4002_0000``] and [``0x4002_0008``] for channels 1 and 2, respectively.  The following outputs are currently selectable:
+.. list-table:: Title
+  :widths: 23 23
+  :header-rows: 1
 
-  0x00  : ADC channel 1
-  0x01  : ADC channel 2
-  0x02  : starting threshold value
-  0x03  : ending threshold value
-  0x04  : CFD delay (in clock cycles)
-  0x05  : Channel 1 delayed
-  0x06  : Channel 2 delayed
-  0x07  : CFD channel 1 out
-  0x08  : CFD channel 2 out
-  0x09  : CFD 1 zero crossing  
-  0x0A  : CFD 2 zero crossing  
-  0x0B  : Channel 1 thresholder output
-  0x0C  : Channel 2 thresholder output
-  0x0D  : Coincidence detection 
-  0x0E  : Channel 1 over threshold detection
-  0x0F  : Channel 2 over threshold detection
-  0x10 : over threshold value
-  0x11 : Channel 1 pulse accumulator
-  0x12 : Channel 2 pulse accumulator
+  * - Register value
+    - Output
+  * - 0x00
+    - ADC channel 1
+  * - 0x01
+    - ADC channel 2
+  * - 0x02
+    - Starting threshold value
+  * - 0x03
+    - Ending threshold value
+  * - 0x04
+    - CFD delay (in clock cycles)
+  * - 0x05
+    - Channel 1 delayed
+  * - 0x06
+    - Channel 2 delayed
+  * - 0x07
+    - CFD channel 1 out
+  * - 0x08
+    - CFD channel 2 out
+  * - 0x09
+    - CFD 1 zero crossing  
+  * - 0x0A
+    - CFD 2 zero crossing  
+  * - 0x0B
+    - Channel 1 thresholder output
+  * - 0x0C
+    - Channel 2 thresholder output
+  * - 0x0D
+    - Coincidence detection 
+  * - 0x0E
+    - Channel 1 over threshold detection
+  * - 0x0F
+    - Channel 2 over threshold detection
+  * - 0x10
+    - Over threshold value
+  * - 0x11
+    - Channel 1 pulse accumulator
+  * - 0x12 
+    - Channel 2 pulse accumulator
 
 A common use case would be to look at one of the inputs along with the starting threshold value to see which pulses would be counted as valid inputs.  Or, one can check which pulses are being detected by selecting the over theshold detected (E or F) settings.
 
