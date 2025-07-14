@@ -1,0 +1,61 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.66113",
+   "Default View_TopLeft":"-790,-8",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0 threadsafe
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 3 -x 790 -y 1000 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 3 -x 790 -y 1020 -defaultsOSRD
+preplace port M05_AXI -pg 1 -lvl 3 -x 790 -y 430 -defaultsOSRD
+preplace port M06_AXI -pg 1 -lvl 3 -x 790 -y 450 -defaultsOSRD
+preplace port M07_AXI -pg 1 -lvl 3 -x 790 -y 470 -defaultsOSRD
+preplace port M08_AXI -pg 1 -lvl 3 -x 790 -y 490 -defaultsOSRD
+preplace port M09_AXI -pg 1 -lvl 3 -x 790 -y 510 -defaultsOSRD
+preplace port M10_AXI -pg 1 -lvl 3 -x 790 -y 530 -defaultsOSRD
+preplace port port-id_ACLK -pg 1 -lvl 0 -x -20 -y 100 -defaultsOSRD
+preplace portBus gpio_io_o -pg 1 -lvl 3 -x 790 -y 610 -defaultsOSRD
+preplace portBus gpio2_io_o -pg 1 -lvl 3 -x 790 -y 650 -defaultsOSRD
+preplace portBus gpio_io_o1 -pg 1 -lvl 3 -x 790 -y 80 -defaultsOSRD
+preplace portBus gpio_io_o3 -pg 1 -lvl 3 -x 790 -y 220 -defaultsOSRD
+preplace portBus gpio_io_o4 -pg 1 -lvl 3 -x 790 -y 360 -defaultsOSRD
+preplace portBus peripheral_aresetn -pg 1 -lvl 3 -x 790 -y 710 -defaultsOSRD
+preplace portBus gpio2_io_o1 -pg 1 -lvl 3 -x 790 -y 1140 -defaultsOSRD
+preplace portBus gpio_io_o5 -pg 1 -lvl 3 -x 790 -y 1100 -defaultsOSRD
+preplace inst thresholds_from_ps -pg 1 -lvl 2 -x 630 -y 620 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 220 -y 860 -defaultsOSRD
+preplace inst overthreshold_from_ps -pg 1 -lvl 2 -x 630 -y 70 -defaultsOSRD
+preplace inst output_select_from_ps -pg 1 -lvl 2 -x 630 -y 1110 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 220 -y 1040 -defaultsOSRD
+preplace inst signal_delay_from_ps -pg 1 -lvl 2 -x 630 -y 210 -defaultsOSRD
+preplace inst zero_crossing_thresholds_from_ps -pg 1 -lvl 2 -x 630 -y 350 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 1 -x 220 -y 430 -defaultsOSRD
+preplace netloc Net 1 0 2 0 90 470
+preplace netloc axi_gpio_1_gpio2_io_o 1 2 1 NJ 650
+preplace netloc axi_gpio_1_gpio_io_o 1 2 1 NJ 610
+preplace netloc overthreshold_from_ps_gpio_io_o 1 2 1 NJ 80
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 0 3 10 100 480 710 NJ
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 20 760 420
+preplace netloc signal_delay_from_ps_gpio_io_o 1 2 1 NJ 220
+preplace netloc zero_crossing_thresholds_from_ps_gpio_io_o 1 2 1 NJ 360
+preplace netloc output_select_from_ps_gpio2_io_o 1 2 1 NJ 1140
+preplace netloc output_select_from_ps_gpio_io_o 1 2 1 NJ 1100
+preplace netloc processing_system7_0_DDR 1 1 2 NJ 1000 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 1 2 NJ 1020 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 0 2 20 110 430
+preplace netloc ps7_0_axi_periph_M00_AXI 1 1 1 450 330n
+preplace netloc ps7_0_axi_periph_M01_AXI 1 1 1 440 50n
+preplace netloc ps7_0_axi_periph_M02_AXI 1 1 1 460 190n
+preplace netloc ps7_0_axi_periph_M03_AXI 1 1 1 440 390n
+preplace netloc ps7_0_axi_periph_M04_AXI 1 1 1 490 330n
+preplace netloc ps7_0_axi_periph_M05_AXI 1 1 2 NJ 430 NJ
+preplace netloc ps7_0_axi_periph_M06_AXI 1 1 2 NJ 450 NJ
+preplace netloc ps7_0_axi_periph_M07_AXI 1 1 2 NJ 470 NJ
+preplace netloc ps7_0_axi_periph_M08_AXI 1 1 2 NJ 490 NJ
+preplace netloc ps7_0_axi_periph_M09_AXI 1 1 2 NJ 510 NJ
+preplace netloc ps7_0_axi_periph_M10_AXI 1 1 2 NJ 530 NJ
+levelinfo -pg 1 -20 220 630 790
+pagesize -pg 1 -db -bbox -sgen -110 -10 1000 1200
+"
+}
+

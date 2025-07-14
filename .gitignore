@@ -9,3 +9,7 @@ Red Pitaya/.ipynb_checkpoints/FPGA_Diagnostic_Tool-checkpoint.ipynb
 docs/.DS_Store
 docs/source/.DS_Store
 Schematics/Red Pitaya PET Hat
+Vivado Files/pet_controller/pet_controller.cache
+Vivado Files/pet_controller/pet_controller.runs
+vivado Files_Archive
+

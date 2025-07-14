@@ -6,7 +6,7 @@ project = 'Red Pitaya PET Experiment'
 author = 'Kevin Van De Bogart'
 
 release = '0.1'
-version = '0.1.0'
+version = '0.1.1'
 
 # -- General configuration
 
