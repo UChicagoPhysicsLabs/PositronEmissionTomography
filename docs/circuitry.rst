@@ -20,7 +20,7 @@ This add-on board has a few purposes:
 
 A finished build is shown below:
 
-.. image:: images/finished_pet_hat.png
+.. image:: images/finished_pet_hat_v2.png
   :width: 800
   :alt: Photograph of populated circuit board.
 

@@ -42,7 +42,7 @@ Finalizing the linear stage
 --------------------------------
   #. Mark the center of the acrylic disk
   #. Go to the `File Downoads section of the Pololu site <https://www.pololu.com/product-info-merged/1993>`_ and print the .pdf of the mechanical drawing
-  #. Using the template, drill out the holes with a #41 (.0960") bit
+  #. Using the template, drill out the holes with a #43 (0.0890") or M2.25 bit
   #. Use a #4-40 tap to thread holes in the plate
 
      * If you have it, use a slightly larger bit to slightly countersink the holes.
@@ -62,7 +62,7 @@ Finalizing the linear stage
      * You'll have to tweak this later such that it will be near the edge of the disc when the gantry is homed.
 
   #. 3D print or laser cut the photodetector holders and assemble them.
-  #. Cut the 6" aluminum rail down to size for the space you'll be using.
+  #. Cut the 6' aluminum rail down to size for the space you'll be using.
   #. Place the center channel over the aluminum rail.
   #. Place the photodetector holders over the aluminum rail at equal spacing from the center of the acrylic disc.
 

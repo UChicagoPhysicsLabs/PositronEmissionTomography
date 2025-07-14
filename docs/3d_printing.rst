@@ -17,6 +17,6 @@ If you are building your own HV power supply, an enclosure can be found here: `H
 
 The bottom, middle and top will need to be printed separately, and the middle should have support added.  The holes are designed to withstand a bit of drooping but better safe than sorry.
 
-
+The bottom is meant to have the pcb secured to it via standoffs into captive nuts on the bottom face.
 
 
