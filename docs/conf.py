@@ -11,12 +11,12 @@ version = '0.1.1'
 # -- General configuration
 
 extensions = [
+    'sphinx_rtd_theme',
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
-    'sphinx.ext.intersphinx',
-    'sphinx_rtd_theme'
+    'sphinx.ext.intersphinx'    
 ]
 
 intersphinx_mapping = {
