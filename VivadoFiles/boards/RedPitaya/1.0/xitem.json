@@ -1,0 +1,34 @@
+{
+  "config": {
+    "items": [
+      {
+        "infra": {
+          "name": "redpitaya", 
+          "display": "Red Pitaya", 
+          "revision": "1.0", 
+          "description": "Red Pitaya", 
+          "company": "redpitaya.com", 
+          "company_display": "RedPitaya", 
+          "author": "Kevin", 
+          "contributors": [
+            {
+              "group": "RedPitaya", 
+              "url": "www.RedPitaya.com"
+            }
+          ], 
+          "category": "Evaluation Boards",
+          "logo": "redpitaya.jpg",
+          "website": "http://www.redpitaya.com/", 
+          "search-keywords": [
+            "redpitaya", 
+            "redpitaya.com", 
+            "board", 
+            "Evaluation Boards"
+          ]
+        }
+      }
+    ]
+  },
+  "_major": 1,
+  "_minor": 0
+}
