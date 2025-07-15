@@ -24,7 +24,7 @@ A finished build is shown below:
   :width: 800
   :alt: Photograph of populated circuit board.
 
-Note that four of the five JST headers have pins removed.  This was intentional, as by removing those pins and filling the corresponding sockets with a solid material (hot glue is good) it is possible to make cables that cannot be connected improperly without heroic effort.  This makes the setup far more robust against assembly failures.
+While it may be slightly difficult to see from this angle, four of the five JST headers have pins removed.  This was intentional, as by removing those pins and filling the corresponding sockets with a solid material (hot glue is good as it can be removed if needed) it is possible to make cables that cannot be connected improperly without heroic effort.  This makes the setup far more robust against assembly failures.
 
 A board for a stand-alone `HV power supply is available here <https://oshpark.com/shared_projects/zzCgJzxe>`_
 
@@ -34,5 +34,5 @@ The finished board is shown below:
   :width: 800
   :alt: Photograph of populated high voltage source circuit board.
 
-Note that most of the wiring here is 22AWG stranded core.  The flexibility is useful as it makes strain-related failures less likely when the module is fitted into its enclosure.
+Note that most of the wiring here is 22AWG stranded core.  The flexibility is useful as it makes strain-related failures less likely when the module is fitted into its enclosure.  The potentiometer on the outside of the case is used for setting the voltage from ~0 to 1 kV.  The internal potentiometer is used as a fine adjust after the device is first constructed and can be safely ignored later.
 
