@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue Jul 15 16:01:20 2025
+# Process ID: 10188
+# Current directory: C:/Users/KevinV/Documents/GitHub/PositronEmissionTomography/VivadoFiles/pet_controller
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15484 C:\Users\KevinV\Documents\GitHub\PositronEmissionTomography\VivadoFiles\pet_controller\pet_controller.xpr
+# Log file: C:/Users/KevinV/Documents/GitHub/PositronEmissionTomography/VivadoFiles/pet_controller/vivado.log
+# Journal file: C:/Users/KevinV/Documents/GitHub/PositronEmissionTomography/VivadoFiles/pet_controller\vivado.jou
+# Running On: nope, OS: Windows, CPU Frequency: 3793 MHz, CPU Physical cores: 16, Host memory: 33411 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/KevinV/Documents/GitHub/PositronEmissionTomography/VivadoFiles/pet_controller/pet_controller.xpr

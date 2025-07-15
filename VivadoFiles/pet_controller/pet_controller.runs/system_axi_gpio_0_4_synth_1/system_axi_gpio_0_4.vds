@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Jul  1 10:37:42 2025
+# Process ID: 31020
+# Current directory: C:/FPGA/FromScratch/FromScratch.runs/system_axi_gpio_0_4_synth_1
+# Command line: vivado.exe -log system_axi_gpio_0_4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_axi_gpio_0_4.tcl
+# Log file: C:/FPGA/FromScratch/FromScratch.runs/system_axi_gpio_0_4_synth_1/system_axi_gpio_0_4.vds
+# Journal file: C:/FPGA/FromScratch/FromScratch.runs/system_axi_gpio_0_4_synth_1\vivado.jou
+# Running On        :nope
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :AMD Ryzen 7 7700 8-Core Processor              
+# CPU Frequency     :3793 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :33411 MB
+# Swap memory       :32212 MB
+# Total Virtual     :65623 MB
+# Available Virtual :12566 MB
+#-----------------------------------------------------------
+source system_axi_gpio_0_4.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 532.434 ; gain = 200.000
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_axi_gpio_0_4
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 3c89cd02da1c0080 to dir: C:/FPGA/FromScratch/FromScratch.runs/system_axi_gpio_0_4_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/FPGA/FromScratch/FromScratch.cache/ip/2024.1/3/c/3c89cd02da1c0080/system_axi_gpio_0_8.dcp to C:/FPGA/FromScratch/FromScratch.runs/system_axi_gpio_0_4_synth_1/system_axi_gpio_0_4.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/FPGA/FromScratch/FromScratch.cache/ip/2024.1/3/c/3c89cd02da1c0080/system_axi_gpio_0_8_sim_netlist.v to C:/FPGA/FromScratch/FromScratch.runs/system_axi_gpio_0_4_synth_1/system_axi_gpio_0_4_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/FPGA/FromScratch/FromScratch.cache/ip/2024.1/3/c/3c89cd02da1c0080/system_axi_gpio_0_8_sim_netlist.vhdl to C:/FPGA/FromScratch/FromScratch.runs/system_axi_gpio_0_4_synth_1/system_axi_gpio_0_4_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/FPGA/FromScratch/FromScratch.cache/ip/2024.1/3/c/3c89cd02da1c0080/system_axi_gpio_0_8_stub.v to C:/FPGA/FromScratch/FromScratch.runs/system_axi_gpio_0_4_synth_1/system_axi_gpio_0_4_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/FPGA/FromScratch/FromScratch.cache/ip/2024.1/3/c/3c89cd02da1c0080/system_axi_gpio_0_8_stub.vhdl to C:/FPGA/FromScratch/FromScratch.runs/system_axi_gpio_0_4_synth_1/system_axi_gpio_0_4_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP system_axi_gpio_0_4, cache-ID = 3c89cd02da1c0080.
+INFO: [Common 17-206] Exiting Vivado at Tue Jul  1 10:37:50 2025...

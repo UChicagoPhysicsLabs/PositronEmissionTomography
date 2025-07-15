@@ -1,0 +1,321 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Jul  9 16:25:00 2025
+# Process ID: 34496
+# Current directory: C:/FPGA/pet_scan/pet_scan.runs/system_led_status_indicators_0_0_synth_1
+# Command line: vivado.exe -log system_led_status_indicators_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_led_status_indicators_0_0.tcl
+# Log file: C:/FPGA/pet_scan/pet_scan.runs/system_led_status_indicators_0_0_synth_1/system_led_status_indicators_0_0.vds
+# Journal file: C:/FPGA/pet_scan/pet_scan.runs/system_led_status_indicators_0_0_synth_1\vivado.jou
+# Running On        :nope
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :AMD Ryzen 7 7700 8-Core Processor              
+# CPU Frequency     :3793 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :33411 MB
+# Swap memory       :33285 MB
+# Total Virtual     :66697 MB
+# Available Virtual :36407 MB
+#-----------------------------------------------------------
+source system_led_status_indicators_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+Command: synth_design -top system_led_status_indicators_0_0 -part xc7z010clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Device 21-9227] Part: xc7z010clg400-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 23748
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1394.785 ; gain = 447.676
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_led_status_indicators_0_0' [c:/FPGA/pet_scan/pet_scan.gen/sources_1/bd/system/ip/system_led_status_indicators_0_0/synth/system_led_status_indicators_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'led_status_indicators' [C:/FPGA/pet_scan/pet_scan.srcs/sources_1/new/led_status_indicators.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'led_status_indicators' (0#1) [C:/FPGA/pet_scan/pet_scan.srcs/sources_1/new/led_status_indicators.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'system_led_status_indicators_0_0' (0#1) [c:/FPGA/pet_scan/pet_scan.gen/sources_1/bd/system/ip/system_led_status_indicators_0_0/synth/system_led_status_indicators_0_0.v:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cfg_led_3_reg' and it is trimmed from '8' to '3' bits. [C:/FPGA/pet_scan/pet_scan.srcs/sources_1/new/led_status_indicators.v:59]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cfg_led_2_reg' and it is trimmed from '8' to '3' bits. [C:/FPGA/pet_scan/pet_scan.srcs/sources_1/new/led_status_indicators.v:58]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cfg_led_1_reg' and it is trimmed from '8' to '3' bits. [C:/FPGA/pet_scan/pet_scan.srcs/sources_1/new/led_status_indicators.v:57]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cfg_led_0_reg' and it is trimmed from '8' to '3' bits. [C:/FPGA/pet_scan/pet_scan.srcs/sources_1/new/led_status_indicators.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cfg_led_7_reg' and it is trimmed from '8' to '3' bits. [C:/FPGA/pet_scan/pet_scan.srcs/sources_1/new/led_status_indicators.v:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cfg_led_6_reg' and it is trimmed from '8' to '3' bits. [C:/FPGA/pet_scan/pet_scan.srcs/sources_1/new/led_status_indicators.v:62]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cfg_led_5_reg' and it is trimmed from '8' to '3' bits. [C:/FPGA/pet_scan/pet_scan.srcs/sources_1/new/led_status_indicators.v:61]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cfg_led_4_reg' and it is trimmed from '8' to '3' bits. [C:/FPGA/pet_scan/pet_scan.srcs/sources_1/new/led_status_indicators.v:60]
+WARNING: [Synth 8-7129] Port cfg_0[31] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[30] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[29] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[28] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[27] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[23] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[22] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[21] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[20] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[19] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[15] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[14] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[13] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[12] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[11] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[7] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[6] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[5] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[4] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[3] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[31] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[30] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[29] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[28] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[27] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[23] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[22] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[21] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[20] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[19] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[15] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[14] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[13] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[12] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[11] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[7] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[6] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[5] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[4] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[3] in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_6 in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_7 in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_8 in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_9 in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_10 in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_11 in module led_status_indicators is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_12 in module led_status_indicators is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1508.219 ; gain = 561.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1508.219 ; gain = 561.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1508.219 ; gain = 561.109
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1508.219 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1597.672 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1598.031 ; gain = 0.359
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1598.031 ; gain = 650.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1598.031 ; gain = 650.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1598.031 ; gain = 650.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1598.031 ; gain = 650.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port cfg_0[31] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[30] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[29] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[28] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[27] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[23] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[22] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[21] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[20] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[19] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[15] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[14] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[13] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[12] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[11] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[7] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[6] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[5] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[4] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_0[3] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[31] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[30] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[29] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[28] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[27] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[23] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[22] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[21] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[20] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[19] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[15] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[14] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[13] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[12] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[11] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[7] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[6] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[5] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[4] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_1[3] in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_6 in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_7 in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_8 in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_9 in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_10 in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_11 in module system_led_status_indicators_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_12 in module system_led_status_indicators_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1598.031 ; gain = 650.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1598.031 ; gain = 650.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1598.031 ; gain = 650.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1598.031 ; gain = 650.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1598.031 ; gain = 650.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1598.031 ; gain = 650.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1598.031 ; gain = 650.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1598.031 ; gain = 650.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1598.031 ; gain = 650.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1598.031 ; gain = 650.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT6 |    16|
+|2     |FDRE |    32|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1598.031 ; gain = 650.922
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 48 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1598.031 ; gain = 561.109
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1598.031 ; gain = 650.922
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1598.031 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1598.031 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 32cb9997
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1598.031 ; gain = 1050.797
+INFO: [Common 17-1381] The checkpoint 'C:/FPGA/pet_scan/pet_scan.runs/system_led_status_indicators_0_0_synth_1/system_led_status_indicators_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file system_led_status_indicators_0_0_utilization_synth.rpt -pb system_led_status_indicators_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul  9 16:25:26 2025...
